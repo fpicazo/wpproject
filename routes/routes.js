@@ -5,7 +5,7 @@ const Model_sesiones = require('../models/model_sesiones');
 
 // Methodes numbers
 router.post('/numbers', async (req, res) => {
-    const data = new Model({
+    const data = new Model({ 
         company: req.body.company,
         number: req.body.number
     })
