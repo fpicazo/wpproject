@@ -5,17 +5,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "http": "nodemon index.js",
+    "wts": "nodemon ./src/infra/queue/worker.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bullmq": "^1.90.1",
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "mongoose": "^6.5.4",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.17.1"
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
