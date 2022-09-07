@@ -17,6 +17,22 @@ or
 yarn
 ```
 
+## About services
+
+Now, to use the application, it will be necessary to initialize two services, one is the HTTP service to receive connections via Rest, and another service that takes care of all whatsapp processes
+
+```sh
+yarn http 
+or
+npm run http
+
+and 
+
+yarn wts
+or 
+yarn run wts
+```
+
 If you are going to use this application on a linux server it will be necessary to install some dependencies, below you will find the instruction to install them on your server
 
 ```sh
